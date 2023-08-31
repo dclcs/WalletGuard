@@ -8,18 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		40E0E6FB2A9F8C8E007A68CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E0E6FA2A9F8C8E007A68CD /* AppDelegate.swift */; };
-		40E0E6FF2A9F8C8E007A68CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E0E6FE2A9F8C8E007A68CD /* ViewController.swift */; };
+		40E0E6FF2A9F8C8E007A68CD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E0E6FE2A9F8C8E007A68CD /* HomeViewController.swift */; };
 		40E0E7042A9F8C8F007A68CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40E0E7032A9F8C8F007A68CD /* Assets.xcassets */; };
 		40E0E7072A9F8C8F007A68CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40E0E7052A9F8C8F007A68CD /* LaunchScreen.storyboard */; };
+		40E0E7102AA0E1B9007A68CD /* WGTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E0E70F2AA0E1B9007A68CD /* WGTabBarViewController.swift */; };
+		40E0E7122AA0E48F007A68CD /* BottomNaviConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E0E7112AA0E48F007A68CD /* BottomNaviConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		40E0E6F72A9F8C8E007A68CD /* WalletGuard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletGuard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40E0E6FA2A9F8C8E007A68CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		40E0E6FE2A9F8C8E007A68CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		40E0E6FE2A9F8C8E007A68CD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		40E0E7032A9F8C8F007A68CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40E0E7062A9F8C8F007A68CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40E0E7082A9F8C8F007A68CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40E0E70F2AA0E1B9007A68CD /* WGTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WGTabBarViewController.swift; sourceTree = "<group>"; };
+		40E0E7112AA0E48F007A68CD /* BottomNaviConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNaviConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,13 +56,31 @@
 		40E0E6F92A9F8C8E007A68CD /* WalletGuard */ = {
 			isa = PBXGroup;
 			children = (
+				40E0E7132AA0E4A0007A68CD /* Config */,
+				40E0E70E2AA0E1A3007A68CD /* ViewController */,
 				40E0E6FA2A9F8C8E007A68CD /* AppDelegate.swift */,
-				40E0E6FE2A9F8C8E007A68CD /* ViewController.swift */,
 				40E0E7032A9F8C8F007A68CD /* Assets.xcassets */,
 				40E0E7052A9F8C8F007A68CD /* LaunchScreen.storyboard */,
 				40E0E7082A9F8C8F007A68CD /* Info.plist */,
 			);
 			path = WalletGuard;
+			sourceTree = "<group>";
+		};
+		40E0E70E2AA0E1A3007A68CD /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				40E0E6FE2A9F8C8E007A68CD /* HomeViewController.swift */,
+				40E0E70F2AA0E1B9007A68CD /* WGTabBarViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		40E0E7132AA0E4A0007A68CD /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				40E0E7112AA0E48F007A68CD /* BottomNaviConfig.swift */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,8 +153,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40E0E6FF2A9F8C8E007A68CD /* ViewController.swift in Sources */,
+				40E0E6FF2A9F8C8E007A68CD /* HomeViewController.swift in Sources */,
 				40E0E6FB2A9F8C8E007A68CD /* AppDelegate.swift in Sources */,
+				40E0E7122AA0E48F007A68CD /* BottomNaviConfig.swift in Sources */,
+				40E0E7102AA0E1B9007A68CD /* WGTabBarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
