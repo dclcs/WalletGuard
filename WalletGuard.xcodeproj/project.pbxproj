@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		40E0E6FB2A9F8C8E007A68CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E0E6FA2A9F8C8E007A68CD /* AppDelegate.swift */; };
-		40E0E6FD2A9F8C8E007A68CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E0E6FC2A9F8C8E007A68CD /* SceneDelegate.swift */; };
 		40E0E6FF2A9F8C8E007A68CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E0E6FE2A9F8C8E007A68CD /* ViewController.swift */; };
-		40E0E7022A9F8C8E007A68CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40E0E7002A9F8C8E007A68CD /* Main.storyboard */; };
 		40E0E7042A9F8C8F007A68CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40E0E7032A9F8C8F007A68CD /* Assets.xcassets */; };
 		40E0E7072A9F8C8F007A68CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40E0E7052A9F8C8F007A68CD /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -18,9 +16,7 @@
 /* Begin PBXFileReference section */
 		40E0E6F72A9F8C8E007A68CD /* WalletGuard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletGuard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40E0E6FA2A9F8C8E007A68CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		40E0E6FC2A9F8C8E007A68CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		40E0E6FE2A9F8C8E007A68CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		40E0E7012A9F8C8E007A68CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		40E0E7032A9F8C8F007A68CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40E0E7062A9F8C8F007A68CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40E0E7082A9F8C8F007A68CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,9 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				40E0E6FA2A9F8C8E007A68CD /* AppDelegate.swift */,
-				40E0E6FC2A9F8C8E007A68CD /* SceneDelegate.swift */,
 				40E0E6FE2A9F8C8E007A68CD /* ViewController.swift */,
-				40E0E7002A9F8C8E007A68CD /* Main.storyboard */,
 				40E0E7032A9F8C8F007A68CD /* Assets.xcassets */,
 				40E0E7052A9F8C8F007A68CD /* LaunchScreen.storyboard */,
 				40E0E7082A9F8C8F007A68CD /* Info.plist */,
@@ -127,7 +121,6 @@
 			files = (
 				40E0E7072A9F8C8F007A68CD /* LaunchScreen.storyboard in Resources */,
 				40E0E7042A9F8C8F007A68CD /* Assets.xcassets in Resources */,
-				40E0E7022A9F8C8E007A68CD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,21 +133,12 @@
 			files = (
 				40E0E6FF2A9F8C8E007A68CD /* ViewController.swift in Sources */,
 				40E0E6FB2A9F8C8E007A68CD /* AppDelegate.swift in Sources */,
-				40E0E6FD2A9F8C8E007A68CD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		40E0E7002A9F8C8E007A68CD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				40E0E7012A9F8C8E007A68CD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		40E0E7052A9F8C8F007A68CD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +276,6 @@
 				INFOPLIST_FILE = WalletGuard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +303,6 @@
 				INFOPLIST_FILE = WalletGuard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
