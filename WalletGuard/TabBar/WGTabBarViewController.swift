@@ -6,10 +6,8 @@
 //
 
 import UIKit
-
-class WGTabBarViewController : UITabBarController {
-    
-    
+import ESTabBarController
+class WGTabBarViewController : ESTabBarController {
     
     public func setupViewControllers() {
         
