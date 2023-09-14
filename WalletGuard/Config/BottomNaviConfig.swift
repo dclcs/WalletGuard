@@ -46,9 +46,6 @@ enum WGBottomNaviConfig: CaseIterable {
             return vc
         case .record:
             let vc = WGAddingRecordViewController()
-            let view = ESTabBarItemContentView()
-            view.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
-//            view.backgroundColor = .red
             vc.tabBarItem = ESTabBarItem(ExampleIrregularityContentView(), title: nil, image: UIImage(named: "big"), selectedImage: UIImage(named: "big"))
             return vc
         case .budget:

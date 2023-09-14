@@ -16,6 +16,9 @@
 		40F658CF2AB0AC6100C4D2AD /* ESTabBarController in Frameworks */ = {isa = PBXBuildFile; productRef = 40F658CE2AB0AC6100C4D2AD /* ESTabBarController */; };
 		40F658D52AB0B13D00C4D2AD /* WGAddingRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F658D42AB0B13D00C4D2AD /* WGAddingRecordViewController.swift */; };
 		40F658D72AB0B45F00C4D2AD /* WGTabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F658D62AB0B45F00C4D2AD /* WGTabItemView.swift */; };
+		40F658DB2AB203CA00C4D2AD /* WGAddingRecordHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F658DA2AB203CA00C4D2AD /* WGAddingRecordHeaderView.swift */; };
+		40F658DE2AB2041700C4D2AD /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 40F658DD2AB2041700C4D2AD /* SnapKit */; };
+		40F658E12AB28CA400C4D2AD /* WGAddingRecordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F658E02AB28CA400C4D2AD /* WGAddingRecordModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,8 @@
 		40E0E7112AA0E48F007A68CD /* BottomNaviConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNaviConfig.swift; sourceTree = "<group>"; };
 		40F658D42AB0B13D00C4D2AD /* WGAddingRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WGAddingRecordViewController.swift; sourceTree = "<group>"; };
 		40F658D62AB0B45F00C4D2AD /* WGTabItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WGTabItemView.swift; sourceTree = "<group>"; };
+		40F658DA2AB203CA00C4D2AD /* WGAddingRecordHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WGAddingRecordHeaderView.swift; sourceTree = "<group>"; };
+		40F658E02AB28CA400C4D2AD /* WGAddingRecordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WGAddingRecordModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +42,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40F658CF2AB0AC6100C4D2AD /* ESTabBarController in Frameworks */,
+				40F658DE2AB2041700C4D2AD /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,7 +70,7 @@
 			children = (
 				40F658D32AB0B09100C4D2AD /* TabBar */,
 				40E0E7132AA0E4A0007A68CD /* Config */,
-				40E0E70E2AA0E1A3007A68CD /* ViewController */,
+				40E0E70E2AA0E1A3007A68CD /* Pages */,
 				40E0E6FA2A9F8C8E007A68CD /* AppDelegate.swift */,
 				40E0E7032A9F8C8F007A68CD /* Assets.xcassets */,
 				40E0E7052A9F8C8F007A68CD /* LaunchScreen.storyboard */,
@@ -73,14 +79,14 @@
 			path = WalletGuard;
 			sourceTree = "<group>";
 		};
-		40E0E70E2AA0E1A3007A68CD /* ViewController */ = {
+		40E0E70E2AA0E1A3007A68CD /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				40F658D82AB203AC00C4D2AD /* AddingRecord */,
 				40E0E6FE2A9F8C8E007A68CD /* HomeViewController.swift */,
-				40F658D42AB0B13D00C4D2AD /* WGAddingRecordViewController.swift */,
 				40F658D62AB0B45F00C4D2AD /* WGTabItemView.swift */,
 			);
-			path = ViewController;
+			path = Pages;
 			sourceTree = "<group>";
 		};
 		40E0E7132AA0E4A0007A68CD /* Config */ = {
@@ -97,6 +103,32 @@
 				40E0E70F2AA0E1B9007A68CD /* WGTabBarViewController.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		40F658D82AB203AC00C4D2AD /* AddingRecord */ = {
+			isa = PBXGroup;
+			children = (
+				40F658DF2AB28C8F00C4D2AD /* Model */,
+				40F658D92AB203BC00C4D2AD /* View */,
+				40F658D42AB0B13D00C4D2AD /* WGAddingRecordViewController.swift */,
+			);
+			path = AddingRecord;
+			sourceTree = "<group>";
+		};
+		40F658D92AB203BC00C4D2AD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				40F658DA2AB203CA00C4D2AD /* WGAddingRecordHeaderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		40F658DF2AB28C8F00C4D2AD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				40F658E02AB28CA400C4D2AD /* WGAddingRecordModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,6 +149,7 @@
 			name = WalletGuard;
 			packageProductDependencies = (
 				40F658CE2AB0AC6100C4D2AD /* ESTabBarController */,
+				40F658DD2AB2041700C4D2AD /* SnapKit */,
 			);
 			productName = WalletGuard;
 			productReference = 40E0E6F72A9F8C8E007A68CD /* WalletGuard.app */;
@@ -148,6 +181,7 @@
 			mainGroup = 40E0E6EE2A9F8C8D007A68CD;
 			packageReferences = (
 				40F658CD2AB0AC6100C4D2AD /* XCRemoteSwiftPackageReference "ESTabBarController" */,
+				40F658DC2AB2041700C4D2AD /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 40E0E6F82A9F8C8E007A68CD /* Products */;
 			projectDirPath = "";
@@ -176,10 +210,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				40E0E6FF2A9F8C8E007A68CD /* HomeViewController.swift in Sources */,
+				40F658E12AB28CA400C4D2AD /* WGAddingRecordModel.swift in Sources */,
 				40F658D52AB0B13D00C4D2AD /* WGAddingRecordViewController.swift in Sources */,
 				40E0E6FB2A9F8C8E007A68CD /* AppDelegate.swift in Sources */,
 				40F658D72AB0B45F00C4D2AD /* WGTabItemView.swift in Sources */,
 				40E0E7122AA0E48F007A68CD /* BottomNaviConfig.swift in Sources */,
+				40F658DB2AB203CA00C4D2AD /* WGAddingRecordHeaderView.swift in Sources */,
 				40E0E7102AA0E1B9007A68CD /* WGTabBarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,6 +434,14 @@
 				minimumVersion = "2.9.0-spm";
 			};
 		};
+		40F658DC2AB2041700C4D2AD /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -405,6 +449,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 40F658CD2AB0AC6100C4D2AD /* XCRemoteSwiftPackageReference "ESTabBarController" */;
 			productName = ESTabBarController;
+		};
+		40F658DD2AB2041700C4D2AD /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 40F658DC2AB2041700C4D2AD /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

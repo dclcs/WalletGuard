@@ -16,6 +16,8 @@ class WGTabBarViewController : ESTabBarController {
             vcs.append(config.viewController)
         }
         
+        self.view.backgroundColor = .white
+        
         self.viewControllers = vcs
 
     }
